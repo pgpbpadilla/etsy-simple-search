@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E937AE51925011F00CE9144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E937AE41925011F00CE9144 /* Foundation.framework */; };
+		6E937AE71925011F00CE9144 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E937AE61925011F00CE9144 /* CoreGraphics.framework */; };
+		6E937AE91925011F00CE9144 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E937AE81925011F00CE9144 /* UIKit.framework */; };
+		6E937AEF1925011F00CE9144 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E937AED1925011F00CE9144 /* InfoPlist.strings */; };
+		6E937AF11925011F00CE9144 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E937AF01925011F00CE9144 /* main.m */; };
+		6E937AF51925011F00CE9144 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E937AF41925011F00CE9144 /* AppDelegate.m */; };
+		6E937AF81925011F00CE9144 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E937AF61925011F00CE9144 /* Main_iPhone.storyboard */; };
+		6E937B031925011F00CE9144 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E937B021925011F00CE9144 /* Images.xcassets */; };
+		6E937B0A1925011F00CE9144 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E937B091925011F00CE9144 /* XCTest.framework */; };
+		6E937B0B1925011F00CE9144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E937AE41925011F00CE9144 /* Foundation.framework */; };
+		6E937B0C1925011F00CE9144 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E937AE81925011F00CE9144 /* UIKit.framework */; };
+		6E937B141925011F00CE9144 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E937B121925011F00CE9144 /* InfoPlist.strings */; };
+		6E937B161925011F00CE9144 /* EtsySearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E937B151925011F00CE9144 /* EtsySearchTests.m */; };
+		6EC6E61F192940E800321443 /* ESSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E61E192940E800321443 /* ESSearchViewController.m */; };
+		6EC6E6221929429F00321443 /* ESItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E6211929429F00321443 /* ESItemView.m */; };
+		6EC6E62519294E8E00321443 /* ESCollectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E62419294E8E00321443 /* ESCollectionHeader.m */; };
+		6EC6E62819297FF400321443 /* EtsySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E62719297FF400321443 /* EtsySearch.m */; };
+		6EC6E62E192987DC00321443 /* ESSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E62D192987DC00321443 /* ESSearchResult.m */; };
+		6EC6E6311929893800321443 /* ESParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E6301929893800321443 /* ESParser.m */; };
+		6EC6E63D1929AFAC00321443 /* ESListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E63C1929AFAC00321443 /* ESListing.m */; };
+		6EC6E6421929E05D00321443 /* ESItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6E6411929E05D00321443 /* ESItemDetailViewController.m */; };
+		D1B83226B2A74201A6AC525E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1CC99DE5145E59D9C953D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E937B0D1925011F00CE9144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E937AD91925011F00CE9144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E937AE01925011F00CE9144;
+			remoteInfo = EtsySearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021BD0634604463EB5F6625E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6E937AE11925011F00CE9144 /* EtsySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtsySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E937AE41925011F00CE9144 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E937AE61925011F00CE9144 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E937AE81925011F00CE9144 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E937AEC1925011F00CE9144 /* EtsySearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EtsySearch-Info.plist"; sourceTree = "<group>"; };
+		6E937AEE1925011F00CE9144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E937AF01925011F00CE9144 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E937AF21925011F00CE9144 /* EtsySearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EtsySearch-Prefix.pch"; sourceTree = "<group>"; };
+		6E937AF31925011F00CE9144 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E937AF41925011F00CE9144 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E937AF71925011F00CE9144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6E937B021925011F00CE9144 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E937B081925011F00CE9144 /* EtsySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtsySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E937B091925011F00CE9144 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6E937B111925011F00CE9144 /* EtsySearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EtsySearchTests-Info.plist"; sourceTree = "<group>"; };
+		6E937B131925011F00CE9144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E937B151925011F00CE9144 /* EtsySearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EtsySearchTests.m; sourceTree = "<group>"; };
+		6EC6E61D192940E800321443 /* ESSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSearchViewController.h; sourceTree = "<group>"; };
+		6EC6E61E192940E800321443 /* ESSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSearchViewController.m; sourceTree = "<group>"; };
+		6EC6E6201929429F00321443 /* ESItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESItemView.h; sourceTree = "<group>"; };
+		6EC6E6211929429F00321443 /* ESItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESItemView.m; sourceTree = "<group>"; };
+		6EC6E62319294E8E00321443 /* ESCollectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCollectionHeader.h; sourceTree = "<group>"; };
+		6EC6E62419294E8E00321443 /* ESCollectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESCollectionHeader.m; sourceTree = "<group>"; };
+		6EC6E62619297FF400321443 /* EtsySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtsySearch.h; sourceTree = "<group>"; };
+		6EC6E62719297FF400321443 /* EtsySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtsySearch.m; sourceTree = "<group>"; };
+		6EC6E62C192987DC00321443 /* ESSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSearchResult.h; sourceTree = "<group>"; };
+		6EC6E62D192987DC00321443 /* ESSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSearchResult.m; sourceTree = "<group>"; };
+		6EC6E62F1929893800321443 /* ESParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESParser.h; sourceTree = "<group>"; };
+		6EC6E6301929893800321443 /* ESParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESParser.m; sourceTree = "<group>"; };
+		6EC6E63B1929AFAC00321443 /* ESListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESListing.h; sourceTree = "<group>"; };
+		6EC6E63C1929AFAC00321443 /* ESListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESListing.m; sourceTree = "<group>"; };
+		6EC6E6401929E05D00321443 /* ESItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESItemDetailViewController.h; sourceTree = "<group>"; };
+		6EC6E6411929E05D00321443 /* ESItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESItemDetailViewController.m; sourceTree = "<group>"; };
+		FCB1CC99DE5145E59D9C953D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E937ADE1925011F00CE9144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E937AE71925011F00CE9144 /* CoreGraphics.framework in Frameworks */,
+				6E937AE91925011F00CE9144 /* UIKit.framework in Frameworks */,
+				6E937AE51925011F00CE9144 /* Foundation.framework in Frameworks */,
+				D1B83226B2A74201A6AC525E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E937B051925011F00CE9144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E937B0A1925011F00CE9144 /* XCTest.framework in Frameworks */,
+				6E937B0C1925011F00CE9144 /* UIKit.framework in Frameworks */,
+				6E937B0B1925011F00CE9144 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E937AD81925011F00CE9144 = {
+			isa = PBXGroup;
+			children = (
+				6E937AEA1925011F00CE9144 /* EtsySearch */,
+				6E937B0F1925011F00CE9144 /* EtsySearchTests */,
+				6E937AE31925011F00CE9144 /* Frameworks */,
+				6E937AE21925011F00CE9144 /* Products */,
+				021BD0634604463EB5F6625E /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		6E937AE21925011F00CE9144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E937AE11925011F00CE9144 /* EtsySearch.app */,
+				6E937B081925011F00CE9144 /* EtsySearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E937AE31925011F00CE9144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E937AE41925011F00CE9144 /* Foundation.framework */,
+				6E937AE61925011F00CE9144 /* CoreGraphics.framework */,
+				6E937AE81925011F00CE9144 /* UIKit.framework */,
+				6E937B091925011F00CE9144 /* XCTest.framework */,
+				FCB1CC99DE5145E59D9C953D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E937AEA1925011F00CE9144 /* EtsySearch */ = {
+			isa = PBXGroup;
+			children = (
+				6EC6E63619299AED00321443 /* Models */,
+				6EC6E63519299ADD00321443 /* View */,
+				6E937AF31925011F00CE9144 /* AppDelegate.h */,
+				6E937AF41925011F00CE9144 /* AppDelegate.m */,
+				6E937AF61925011F00CE9144 /* Main_iPhone.storyboard */,
+				6EC6E61D192940E800321443 /* ESSearchViewController.h */,
+				6EC6E61E192940E800321443 /* ESSearchViewController.m */,
+				6EC6E6401929E05D00321443 /* ESItemDetailViewController.h */,
+				6EC6E6411929E05D00321443 /* ESItemDetailViewController.m */,
+				6E937B021925011F00CE9144 /* Images.xcassets */,
+				6E937AEB1925011F00CE9144 /* Supporting Files */,
+			);
+			path = EtsySearch;
+			sourceTree = "<group>";
+		};
+		6E937AEB1925011F00CE9144 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E937AEC1925011F00CE9144 /* EtsySearch-Info.plist */,
+				6E937AED1925011F00CE9144 /* InfoPlist.strings */,
+				6E937AF01925011F00CE9144 /* main.m */,
+				6E937AF21925011F00CE9144 /* EtsySearch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E937B0F1925011F00CE9144 /* EtsySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E937B151925011F00CE9144 /* EtsySearchTests.m */,
+				6E937B101925011F00CE9144 /* Supporting Files */,
+			);
+			path = EtsySearchTests;
+			sourceTree = "<group>";
+		};
+		6E937B101925011F00CE9144 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E937B111925011F00CE9144 /* EtsySearchTests-Info.plist */,
+				6E937B121925011F00CE9144 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EC6E63519299ADD00321443 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EC6E6201929429F00321443 /* ESItemView.h */,
+				6EC6E6211929429F00321443 /* ESItemView.m */,
+				6EC6E62319294E8E00321443 /* ESCollectionHeader.h */,
+				6EC6E62419294E8E00321443 /* ESCollectionHeader.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6EC6E63619299AED00321443 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EC6E62C192987DC00321443 /* ESSearchResult.h */,
+				6EC6E62D192987DC00321443 /* ESSearchResult.m */,
+				6EC6E62619297FF400321443 /* EtsySearch.h */,
+				6EC6E62719297FF400321443 /* EtsySearch.m */,
+				6EC6E62F1929893800321443 /* ESParser.h */,
+				6EC6E6301929893800321443 /* ESParser.m */,
+				6EC6E63B1929AFAC00321443 /* ESListing.h */,
+				6EC6E63C1929AFAC00321443 /* ESListing.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E937AE01925011F00CE9144 /* EtsySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E937B191925011F00CE9144 /* Build configuration list for PBXNativeTarget "EtsySearch" */;
+			buildPhases = (
+				2B8D79A24B2241E08D9511E6 /* Check Pods Manifest.lock */,
+				6E937ADD1925011F00CE9144 /* Sources */,
+				6E937ADE1925011F00CE9144 /* Frameworks */,
+				6E937ADF1925011F00CE9144 /* Resources */,
+				AEA33E6102E547B0867267AE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EtsySearch;
+			productName = EtsySearch;
+			productReference = 6E937AE11925011F00CE9144 /* EtsySearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E937B071925011F00CE9144 /* EtsySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E937B1C1925011F00CE9144 /* Build configuration list for PBXNativeTarget "EtsySearchTests" */;
+			buildPhases = (
+				6E937B041925011F00CE9144 /* Sources */,
+				6E937B051925011F00CE9144 /* Frameworks */,
+				6E937B061925011F00CE9144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E937B0E1925011F00CE9144 /* PBXTargetDependency */,
+			);
+			name = EtsySearchTests;
+			productName = EtsySearchTests;
+			productReference = 6E937B081925011F00CE9144 /* EtsySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E937AD91925011F00CE9144 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = pgpbpadilla;
+				TargetAttributes = {
+					6E937B071925011F00CE9144 = {
+						TestTargetID = 6E937AE01925011F00CE9144;
+					};
+				};
+			};
+			buildConfigurationList = 6E937ADC1925011F00CE9144 /* Build configuration list for PBXProject "EtsySearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E937AD81925011F00CE9144;
+			productRefGroup = 6E937AE21925011F00CE9144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E937AE01925011F00CE9144 /* EtsySearch */,
+				6E937B071925011F00CE9144 /* EtsySearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E937ADF1925011F00CE9144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E937B031925011F00CE9144 /* Images.xcassets in Resources */,
+				6E937AF81925011F00CE9144 /* Main_iPhone.storyboard in Resources */,
+				6E937AEF1925011F00CE9144 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E937B061925011F00CE9144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E937B141925011F00CE9144 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B8D79A24B2241E08D9511E6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AEA33E6102E547B0867267AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E937ADD1925011F00CE9144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC6E6221929429F00321443 /* ESItemView.m in Sources */,
+				6EC6E63D1929AFAC00321443 /* ESListing.m in Sources */,
+				6EC6E6421929E05D00321443 /* ESItemDetailViewController.m in Sources */,
+				6EC6E62519294E8E00321443 /* ESCollectionHeader.m in Sources */,
+				6EC6E62819297FF400321443 /* EtsySearch.m in Sources */,
+				6E937AF51925011F00CE9144 /* AppDelegate.m in Sources */,
+				6EC6E6311929893800321443 /* ESParser.m in Sources */,
+				6EC6E62E192987DC00321443 /* ESSearchResult.m in Sources */,
+				6E937AF11925011F00CE9144 /* main.m in Sources */,
+				6EC6E61F192940E800321443 /* ESSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E937B041925011F00CE9144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E937B161925011F00CE9144 /* EtsySearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E937B0E1925011F00CE9144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E937AE01925011F00CE9144 /* EtsySearch */;
+			targetProxy = 6E937B0D1925011F00CE9144 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E937AED1925011F00CE9144 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E937AEE1925011F00CE9144 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E937AF61925011F00CE9144 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E937AF71925011F00CE9144 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6E937B121925011F00CE9144 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E937B131925011F00CE9144 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E937B171925011F00CE9144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E937B181925011F00CE9144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E937B1A1925011F00CE9144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021BD0634604463EB5F6625E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EtsySearch/EtsySearch-Prefix.pch";
+				INFOPLIST_FILE = "EtsySearch/EtsySearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E937B1B1925011F00CE9144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021BD0634604463EB5F6625E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EtsySearch/EtsySearch-Prefix.pch";
+				INFOPLIST_FILE = "EtsySearch/EtsySearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E937B1D1925011F00CE9144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EtsySearch.app/EtsySearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EtsySearch/EtsySearch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EtsySearchTests/EtsySearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6E937B1E1925011F00CE9144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EtsySearch.app/EtsySearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EtsySearch/EtsySearch-Prefix.pch";
+				INFOPLIST_FILE = "EtsySearchTests/EtsySearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E937ADC1925011F00CE9144 /* Build configuration list for PBXProject "EtsySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E937B171925011F00CE9144 /* Debug */,
+				6E937B181925011F00CE9144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E937B191925011F00CE9144 /* Build configuration list for PBXNativeTarget "EtsySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E937B1A1925011F00CE9144 /* Debug */,
+				6E937B1B1925011F00CE9144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E937B1C1925011F00CE9144 /* Build configuration list for PBXNativeTarget "EtsySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E937B1D1925011F00CE9144 /* Debug */,
+				6E937B1E1925011F00CE9144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E937AD91925011F00CE9144 /* Project object */;
+}
