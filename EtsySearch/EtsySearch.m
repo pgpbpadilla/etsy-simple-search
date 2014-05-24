@@ -63,6 +63,7 @@ typedef enum ESResultsView {
            failure:(void (^)(NSError *))failure{
     
     [baseParams addEntriesFromDictionary:params];
+    [manager.operationQueue cancelAllOperations];
     [manager GET:path
       parameters:baseParams
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -73,6 +74,9 @@ typedef enum ESResultsView {
              NSLog(@"Error: %@", error);
              failure(error);
          }];
+    
+    NSLog(@"Current # of operations executing: %d",
+          manager.operationQueue.operations.count);
     
 }
 
