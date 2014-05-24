@@ -103,6 +103,10 @@
         }];
     }
     
+    itemView.titleLabel.text = @"";
+    itemView.priceLabel.text = @"";
+    itemView.imageView.image = [UIImage imageNamed:@"i-sell-on-etsy"];
+    
     ESListing* listing = allItems[indexPath.item];
     itemView.titleLabel.text = (listing.details)[@"title"];
     NSString* priceString = [NSString stringWithFormat:@"$ %@ USD", (listing.details)[@"price"]];
