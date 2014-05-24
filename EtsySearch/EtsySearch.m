@@ -123,7 +123,7 @@ typedef enum ESResultsView {
     [imageOp setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, UIImage* image) {
         listing.image = image;
         
-        [UIView transitionWithView:wImageView duration:0.3
+        [UIView transitionWithView:wImageView duration:1
                            options:UIViewAnimationOptionTransitionCrossDissolve
                         animations:^{
                             wImageView.image = image;
@@ -139,8 +139,23 @@ typedef enum ESResultsView {
 -(void)loadNextPage:(void (^)(ESSearchResult *))success
             failure:(void (^)(NSError *))failure{
     
+    NSError* error;
+    NSString* errorDesc;
     if (!lastResult) {
-        NSLog(@"Cannot load next page.");
+        errorDesc = @"Cannot load next page.";
+        error = [NSError errorWithDomain:@"ESNextPage"
+                                    code:101
+                                userInfo:@{NSLocalizedDescriptionKey: errorDesc}];
+        failure(error);
+        return;
+    }
+    
+    if ([NSNull null] == (lastResult.pagination)[@"next_page"]) {
+        errorDesc = @"No more pages to load.";
+        error = [NSError errorWithDomain:@"ESNextPage"
+                                    code:101
+                                userInfo:@{NSLocalizedDescriptionKey: errorDesc}];
+        failure(error);
         return;
     }
     
